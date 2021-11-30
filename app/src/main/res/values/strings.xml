@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Star Wars Database</string>
+    <string name="error_message">Error occurred. Try again later…</string>
+</resources>

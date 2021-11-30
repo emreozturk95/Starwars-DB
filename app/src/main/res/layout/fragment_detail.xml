@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.starwarsdatabase.main.viewmodel.DetailViewModel" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".main.view.DetailFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clDetail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ProgressBar
+                android:id="@+id/progressDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvCharNameDetail"
+                style="@style/CustomTextView"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@id/tvName"
+                app:layout_constraintStart_toEndOf="@id/tvName"
+                app:layout_constraintTop_toTopOf="@id/tvName" />
+
+            <TextView
+                android:id="@+id/tvName"
+                style="@style/CustomTextViewBold"
+                android:text="Name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvCharHairColorDetail"
+                style="@style/CustomTextView"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@id/tvHairColor"
+                app:layout_constraintStart_toEndOf="@+id/tvHairColor"
+                app:layout_constraintTop_toTopOf="@id/tvHairColor" />
+
+            <TextView
+                android:id="@+id/tvHairColor"
+                style="@style/CustomTextViewBold"
+                android:text="Hair Color"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvName" />
+
+            <TextView
+                android:id="@+id/tvGenderDetail"
+                style="@style/CustomTextView"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@id/tvGender"
+                app:layout_constraintStart_toEndOf="@id/tvGender"
+                app:layout_constraintTop_toTopOf="@id/tvGender" />
+
+            <TextView
+                android:id="@+id/tvGender"
+                style="@style/CustomTextViewBold"
+                android:text="Gender"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvHairColor" />
+
+            <TextView
+                android:id="@+id/tvHeightDetail"
+                style="@style/CustomTextView"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@id/tvHeight"
+                app:layout_constraintStart_toEndOf="@id/tvHeight"
+                app:layout_constraintTop_toTopOf="@id/tvHeight" />
+
+            <TextView
+                android:id="@+id/tvHeight"
+                style="@style/CustomTextViewBold"
+                android:text="Height"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvGender" />
+
+            <TextView
+                android:id="@+id/tvEyeColorDetail"
+                style="@style/CustomTextView"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@id/tvEyeColor"
+                app:layout_constraintStart_toEndOf="@id/tvEyeColor"
+                app:layout_constraintTop_toTopOf="@id/tvEyeColor" />
+
+            <TextView
+                android:id="@+id/tvEyeColor"
+                style="@style/CustomTextViewBold"
+                android:text="Eye Color"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvHeight" />
+
+            <TextView
+                android:id="@+id/tvBirthYearDetail"
+                style="@style/CustomTextView"
+                android:visibility="invisible"
+                app:layout_constraintTop_toTopOf="@id/tvBirthYear"
+                app:layout_constraintBottom_toBottomOf="@id/tvBirthYear"
+                app:layout_constraintStart_toEndOf="@id/tvBirthYear" />
+
+            <TextView
+                android:id="@+id/tvBirthYear"
+                style="@style/CustomTextViewBold"
+                android:text="Birth Year"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvEyeColor" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </FrameLayout>
+
+</layout>
